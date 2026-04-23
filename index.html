@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surulim | 夜の接客業で輝くあなたへ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+            background-color: #050505;
+        }
+        .font-serif {
+            font-family: 'Shippori+Mincho', serif;
+        }
+        .bg-brand-red {
+            background-color: #800000;
+        }
+        .text-brand-red {
+            color: #800000;
+        }
+        .bg-brand-gold {
+            background-color: #B8860B;
+        }
+        .text-brand-gold {
+            color: #B8860B;
+        }
+        
+        /* ヒーロー背景（AI生成画像がここに入ります） */
+        #hero-image-container {
+            transition: opacity 1s ease-in-out;
+            background-image: linear-gradient(to right, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.2) 100%);
+        }
+        
+        .loading-shimmer {
+            background: linear-gradient(90deg, #1a1a1a 25%, #333 50%, #1a1a1a 75%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+
+        @keyframes shimmer {
+            from { background-position: 200% 0; }
+            to { background-position: -200% 0; }
+        }
+
+        .section-pattern {
+            background-image: radial-gradient(#222 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(184, 134, 11, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { left: -50%; }
+            100% { left: 150%; }
+        }
+
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #B8860B 0%, #FFD700 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .neon-border {
+            border: 1px solid rgba(184, 134, 11, 0.5);
+            box-shadow: 0 0 10px rgba(184, 134, 11, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+
+    <!-- Hero Section -->
+    <header class="relative min-h-[900px] flex items-center overflow-hidden">
+        <!-- AI Generated Background -->
+        <div id="hero-image-container" class="absolute inset-0 z-0 loading-shimmer opacity-100"></div>
+        <div id="hero-overlay" class="absolute inset-0 z-[1] bg-gradient-to-r from-black via-black/60 to-transparent"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-block px-4 py-1 border border-brand-gold text-brand-gold text-xs font-bold tracking-[0.3em] mb-8 bg-black/60 backdrop-blur-md">
+                    EXCLUSIVE MEDICAL ARTISTRY
+                </div>
+                <h1 class="text-5xl md:text-8xl font-serif font-bold leading-tight mb-8 text-white">
+                    誰よりも輝きたい<br>
+                    <span class="text-gold-gradient">夜の接客業</span>の<br>
+                    あなたへ
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 font-light italic mb-12 border-l-4 border-brand-gold pl-6 leading-relaxed">
+                    「最高の私で、最高の夜を。時間はかけず、結果だけを。」
+                </p>
+
+                <!-- 悩みセクション -->
+                <div class="bg-black/60 backdrop-blur-xl p-10 rounded-3xl border border-white/10 max-w-xl shadow-2xl">
+                    <h2 class="text-xl font-bold mb-8 flex items-center text-brand-gold">
+                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        こんな現実、変えませんか？
+                    </h2>
+                    <ul class="space-y-6 text-lg md:text-xl">
+                        <li class="flex items-center">
+                            <span class="w-2.5 h-2.5 bg-brand-red rounded-full mr-4 shadow-[0_0_8px_rgba(128,0,0,0.8)]"></span>
+                            前まで着れたドレスが着れない
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2.5 h-2.5 bg-brand-red rounded-full mr-4 shadow-[0_0_8px_rgba(128,0,0,0.8)]"></span>
+                            お腹や二の腕が気になって露出できない
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2.5 h-2.5 bg-brand-red rounded-full mr-4 shadow-[0_0_8px_rgba(128,0,0,0.8)]"></span>
+                            他の子の方がスタイル良くて負けてる気がする
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Image Generation Script -->
+        <script>
+            const apiKey = "";
+            async function generateHeroImage() {
+                const container = document.getElementById('hero-image-container');
+                const prompt = "A gorgeous Japanese nightlife hostess in a shimmering black and gold evening dress, standing in a luxury modern club lounge, cinematic lighting, purple and gold neon accents, high fashion photography, 8k resolution, elegant and professional atmosphere.";
+                
+                try {
+                    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            instances: [{ prompt: prompt }],
+                            parameters: { sampleCount: 1 }
+                        })
+                    });
+                    const result = await response.json();
+                    if (result.predictions && result.predictions[0]) {
+                        const imageUrl = `data:image/png;base64,${result.predictions[0].bytesBase64Encoded}`;
+                        container.style.backgroundImage = `linear-gradient(to right, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%), url('${imageUrl}')`;
+                        container.classList.remove('loading-shimmer');
+                        container.style.backgroundSize = 'cover';
+                        container.style.backgroundPosition = 'center';
+                    }
+                } catch (error) {
+                    // Fallback to stock image if API fails
+                    container.style.backgroundImage = `linear-gradient(to right, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%), url('https://images.unsplash.com/photo-1574091233051-3518467b93e7?auto=format&fit=crop&q=80&w=1600')`;
+                    container.classList.remove('loading-shimmer');
+                }
+            }
+            window.addEventListener('load', generateHeroImage);
+        </script>
+    </header>
+
+    <!-- Solution Section -->
+    <section class="py-24 bg-black relative overflow-hidden section-pattern">
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-6xl md:text-9xl font-serif text-gold-gradient font-bold mb-10">あります！</h2>
+            <div class="mb-20">
+                <img src="https://via.placeholder.com/280x80?text=Surulim" alt="Surulim Logo" class="mx-auto h-24 brightness-150">
+            </div>
+
+            <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 mb-28">
+                <div class="bg-gray-900/80 p-10 rounded-3xl border border-gray-800 hover:border-brand-gold transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-8 neon-border">
+                        <svg class="w-10 h-10 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <p class="text-2xl font-bold leading-relaxed">スルリムなら短時間で<br><span class="text-brand-gold">圧倒的</span>な見た目変化</p>
+                </div>
+                <div class="bg-gray-900/80 p-10 rounded-3xl border border-gray-800 hover:border-brand-gold transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-8 neon-border">
+                        <span class="text-brand-gold font-bold text-2xl">15min</span>
+                    </div>
+                    <p class="text-2xl font-bold leading-relaxed">出勤前でも余裕で通える<br>わずか15分の施術</p>
+                </div>
+                <div class="bg-gray-900/80 p-10 rounded-3xl border border-gray-800 hover:border-brand-gold transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 rounded-full bg-brand-gold/10 flex items-center justify-center mx-auto mb-8 neon-border">
+                        <svg class="w-10 h-10 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <p class="text-2xl font-bold leading-relaxed">医療だから実現できる<br>リバウンド阻止力</p>
+                </div>
+            </div>
+
+            <!-- 夜職向けベネフィット -->
+            <div class="max-w-6xl mx-auto mb-20 px-4">
+                <h3 class="text-3xl md:text-5xl font-serif font-bold mb-16 text-white italic">
+                    スルリムをすれば、<br class="md:hidden">あなたの価値はさらに高まる
+                </h3>
+                <div class="grid md:grid-cols-3 gap-10">
+                    <div class="benefit-card p-12 rounded-[2rem] text-left">
+                        <div class="text-brand-gold text-5xl font-serif mb-6">01.</div>
+                        <h4 class="text-2xl font-bold text-white mb-6">自信爆上がり</h4>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            どんなドレスも最高のシルエットで着こなせる。鏡の中の自分に惚れ込み、接客のオーラが変わります。
+                        </p>
+                    </div>
+                    <div class="benefit-card p-12 rounded-[2rem] text-left">
+                        <div class="text-brand-gold text-5xl font-serif mb-6">02.</div>
+                        <h4 class="text-2xl font-bold text-white mb-6">売り上げ・評価UP</h4>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            一瞬で視線を奪うスタイル。指名数や売上の向上に直結し、お店での存在感は比類なきものに。
+                        </p>
+                    </div>
+                    <div class="benefit-card p-12 rounded-[2rem] text-left">
+                        <div class="text-brand-gold text-5xl font-serif mb-6">03.</div>
+                        <h4 class="text-2xl font-bold text-white mb-6">ストレス解放</h4>
+                        <p class="text-gray-400 leading-relaxed text-lg">
+                            コンプレックスとの決別。周りの視線が「恐怖」から「快感」に変わり、毎日がより輝き出します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Stats Section -->
+            <div class="max-w-6xl mx-auto border-y border-white/10 py-16">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Safety First</p>
+                        <p class="text-3xl md:text-4xl font-serif font-bold text-gold-gradient">10年間</p>
+                        <p class="text-sm font-bold mt-2 text-gray-300">無事故の信頼</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Track Record</p>
+                        <p class="text-3xl md:text-4xl font-serif font-bold text-gold-gradient">15万人</p>
+                        <p class="text-sm font-bold mt-2 text-gray-300">圧倒的な症例実績</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-2 uppercase tracking-widest">Evidence Based</p>
+                        <p class="text-3xl md:text-4xl font-serif font-bold text-gold-gradient">治験検証</p>
+                        <p class="text-sm font-bold mt-2 text-gray-300">科学的に実証済み</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-2 uppercase tracking-widest">K-Beauty Tech</p>
+                        <p class="text-3xl md:text-4xl font-serif font-bold text-gold-gradient">韓国独自開発</p>
+                        <p class="text-sm font-bold mt-2 text-gray-300">美容大国の最新技術</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cellular Care Section -->
+    <section class="py-32 bg-gray-950 relative">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-5xl mx-auto bg-black/80 backdrop-blur-2xl p-12 md:p-20 rounded-[3rem] shadow-2xl border border-white/5 flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2 flex flex-col items-center">
+                    <div class="flex items-center space-x-10 mb-10">
+                        <div class="text-center">
+                            <div class="w-40 h-40 bg-yellow-950/20 rounded-full flex flex-wrap p-4 overflow-hidden border-2 border-yellow-700/30">
+                                <div class="w-8 h-8 bg-brand-gold rounded-full m-1.5 animate-pulse opacity-70"></div>
+                                <div class="w-8 h-8 bg-brand-gold rounded-full m-1.5 opacity-40"></div>
+                                <div class="w-8 h-8 bg-brand-gold rounded-full m-1.5 opacity-60"></div>
+                                <div class="w-8 h-8 bg-brand-gold rounded-full m-1.5 animate-pulse opacity-50"></div>
+                                <div class="w-8 h-8 bg-brand-gold rounded-full m-1.5 opacity-30"></div>
+                            </div>
+                            <p class="mt-4 text-xs font-bold text-gray-500 tracking-widest uppercase">BEFORE</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <svg class="w-12 h-12 text-brand-gold animate-bounce mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-40 h-40 bg-blue-950/20 rounded-full flex flex-wrap p-4 overflow-hidden border-2 border-blue-500/20">
+                                <div class="w-6 h-6 bg-blue-400 rounded-full m-2.5 opacity-60"></div>
+                                <div class="w-6 h-6 bg-blue-400 rounded-full m-2.5 opacity-40"></div>
+                            </div>
+                            <p class="mt-4 text-xs font-bold text-blue-500 tracking-widest uppercase">AFTER</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900/50 px-6 py-2 rounded-full text-xs text-gray-500 italic">
+                        ※イメージ：医療痩身による脂肪細胞の物理的減少
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="inline-block px-4 py-1 bg-brand-red text-white text-[10px] font-bold rounded-full mb-6 tracking-widest uppercase shadow-lg">Medical Grade Tech</span>
+                    <h3 class="text-4xl font-bold text-gold-gradient mb-8 leading-tight">細胞レベルでのケアで<br>リバウンドを徹底排除</h3>
+                    <p class="text-xl text-gray-300 leading-relaxed mb-8">
+                        一度失った<span class="text-white font-bold underline decoration-brand-gold decoration-4 underline-offset-8">脂肪細胞の数そのものを減らす</span>から、戻りにくい。多忙でジムに行けないあなたに贈る、医療の答えです。
+                    </p>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        ※自己流の過度な食事制限やエステとは異なり、科学的な根拠に基づく根本治療を行います。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-40 bg-black relative overflow-hidden">
+        <!-- Decoration background (Another AI placeholder or texture) -->
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1514525253344-9914d2e74a6c?auto=format&fit=crop&q=80&w=1200')] bg-fixed bg-cover"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-5xl md:text-8xl font-serif font-bold mb-16 drop-shadow-2xl italic text-white leading-tight">
+                今、この瞬間から<br>
+                <span class="text-gold-gradient">最高峰のあなた</span>へ
+            </h2>
+            
+            <div class="max-w-4xl mx-auto bg-white/5 backdrop-blur-3xl border border-white/10 rounded-[4rem] p-16 md:p-24 shadow-[0_35px_100px_rgba(0,0,0,0.8)]">
+                <p class="text-3xl md:text-5xl mb-16 leading-tight font-serif">
+                    今なら、<span class="text-brand-gold font-bold border-b-4 border-brand-gold px-4 inline-block transform -rotate-1 hover:rotate-0 transition-transform">?</span>円で<br class="md:hidden">特別体験
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-10">
+                    <a href="#" class="cta-button bg-brand-red text-white text-3xl font-bold py-8 px-20 rounded-full flex items-center justify-center shadow-2xl hover:scale-105">
+                        今すぐ予約する <span class="ml-4 text-4xl">›</span>
+                    </a>
+                    <a href="#" class="cta-button border-2 border-brand-gold text-brand-gold text-3xl font-bold py-8 px-20 rounded-full flex items-center justify-center hover:bg-brand-gold hover:text-black">
+                        詳細をチェック <span class="ml-4 text-4xl">›</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-black pt-24 pb-12 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h3 class="text-3xl md:text-5xl font-serif font-bold mb-16 text-gold-gradient">最高のステージを、その身に。</h3>
+                <div class="flex flex-wrap justify-center gap-6 opacity-80">
+                    <div class="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-brand-gold/30 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1594744803329-a584af1cae24?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    <div class="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-brand-gold/30 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    <div class="w-28 h-28 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-brand-gold/30 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1519085185758-2ad97904668e?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-16 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
+                <div class="flex flex-col items-center md:items-start">
+                    <img src="https://via.placeholder.com/200x60?text=Surulim" alt="Surulim Logo" class="h-12 mb-8 brightness-200">
+                    <div class="text-gray-500 space-y-3 text-sm">
+                        <p class="font-bold text-gray-200 tracking-widest">Surulim PREMIUM MEDICAL CLINIC</p>
+                        <p>〒000-0000 〇〇県〇〇市〇〇町0-0-0 THE NIGHT TOWER 22F</p>
+                        <p class="text-brand-gold">完全予約制・プライバシー厳守</p>
+                    </div>
+                </div>
+                <div class="max-w-xl text-[10px] text-gray-600 leading-loose">
+                    <p>※本ページの内容は医療広告ガイドラインに基づき作成されています。10年間無事故および症例実績は提携先クリニックの総数です。自由診療のため全額自己負担となります。効果には個人差があるため、事前の無料カウンセリングにて医師と十分にご相談ください。副作用として軽微な内出血や腫れが生じる場合がありますが、数日で改善されます。</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center text-[10px] text-gray-700 tracking-widest">
+                &copy; 2024 Surulim. ALL RIGHTS RESERVED. FOR PROFESSIONALS ONLY.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
