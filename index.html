@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surulim | 忙しい接客業のあなたへ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #333;
+        }
+        .font-serif {
+            font-family: 'Shippori+Mincho', serif;
+        }
+        .bg-brand-red {
+            background-color: #800000;
+        }
+        .text-brand-red {
+            color: #800000;
+        }
+        .bg-brand-gold {
+            background-color: #B8860B;
+        }
+        .text-brand-gold {
+            color: #B8860B;
+        }
+        
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(255,255,255,0.95) 20%, rgba(255,255,255,0.4) 60%, rgba(255,255,255,0.1) 100%), 
+                              url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .section-pattern {
+            background-image: radial-gradient(#e5e7eb 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+
+        .cta-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                              url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .trust-badge {
+            background: linear-gradient(135deg, #B8860B 0%, #FFD700 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Hero Section -->
+    <header class="relative min-h-[700px] flex items-center overflow-hidden hero-bg">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-2xl bg-white/60 backdrop-blur-sm p-8 md:p-12 rounded-r-3xl md:rounded-none md:bg-transparent">
+                <h1 class="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6">
+                    忙しい接客業の<br class="hidden md:block">あなたへ
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-800 mb-10 font-medium">
+                    仕事で見た目を整えたいのに時間がない…
+                </p>
+
+                <div class="space-y-6 border-l-4 border-brand-red pl-8 py-2 bg-white/40 inline-block pr-6">
+                    <div class="flex items-start">
+                        <img src="https://images.unsplash.com/photo-1581579186913-45ac3e6efe93?auto=format&fit=crop&q=80&w=100" class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-white shadow-md">
+                        <p class="text-lg py-4">不満そうな顔で鏡を見る日々</p>
+                    </div>
+                    <div class="flex items-start">
+                        <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?auto=format&fit=crop&q=80&w=100" class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-white shadow-md">
+                        <p class="text-lg py-4">頭を抱えるほど、忙しくて時間がない</p>
+                    </div>
+                    <div class="flex items-start">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=100" class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-white shadow-md">
+                        <p class="text-lg py-4">短時間で簡単に整える方法はないの？</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Solution Section -->
+    <section class="py-24 bg-white relative overflow-hidden section-pattern">
+        <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+            <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800" class="h-full object-cover">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-5xl md:text-8xl font-serif text-brand-gold font-bold mb-8">あります！</h2>
+            <div class="mb-16">
+                <img src="https://via.placeholder.com/240x80?text=Surulim" alt="Surulim Logo" class="mx-auto h-20">
+            </div>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 mb-20">
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-brand-red">
+                    <div class="w-16 h-16 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <p class="text-xl font-bold leading-relaxed">スルリムなら短時間で<br>大きな見た目の変化！</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-brand-red">
+                    <div class="w-16 h-16 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-6">
+                        <span class="text-brand-red font-bold text-xl">15min</span>
+                    </div>
+                    <p class="text-xl font-bold leading-relaxed">治療の時間も<br>わずか15分程度！</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-brand-red">
+                    <div class="w-16 h-16 rounded-full bg-brand-red/10 flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-brand-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <p class="text-xl font-bold leading-relaxed">いそがしいあなたに<br>こそおすすめです！</p>
+                </div>
+            </div>
+
+            <!-- Trust Stats Section (New Info Added Here) -->
+            <div class="max-w-6xl mx-auto border-y border-gray-200 py-12">
+                <h3 class="text-sm font-bold text-gray-400 tracking-[0.2em] mb-10 uppercase">Global Standard & Trust</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-1">Safety First</p>
+                        <p class="text-2xl md:text-3xl font-serif font-bold text-brand-red">10年間</p>
+                        <p class="text-sm font-bold mt-1">無事故の信頼</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-1">Track Record</p>
+                        <p class="text-2xl md:text-3xl font-serif font-bold text-brand-red">15万人</p>
+                        <p class="text-sm font-bold mt-1">圧倒的な症例実績</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-1">Evidence Based</p>
+                        <p class="text-2xl md:text-3xl font-serif font-bold text-brand-red">治験検証</p>
+                        <p class="text-sm font-bold mt-1">科学的に実証済み</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-gray-500 mb-1">K-Beauty Tech</p>
+                        <p class="text-2xl md:text-3xl font-serif font-bold text-brand-red">韓国独自開発</p>
+                        <p class="text-sm font-bold mt-1">美容大国の最新技術</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cellular Care Section -->
+    <section class="py-24 relative">
+        <div class="absolute inset-0 opacity-5">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ec197ec2?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-5xl mx-auto bg-white/90 backdrop-blur p-10 md:p-16 rounded-3xl shadow-2xl border border-gray-100 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 flex flex-col items-center">
+                    <div class="flex items-center space-x-6 mb-8">
+                        <div class="text-center">
+                            <div class="w-32 h-32 bg-yellow-100 rounded-full flex flex-wrap p-3 overflow-hidden border-2 border-yellow-200">
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full m-1 animate-pulse"></div>
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full m-1"></div>
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full m-1"></div>
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full m-1 animate-pulse"></div>
+                                <div class="w-6 h-6 bg-yellow-400 rounded-full m-1"></div>
+                            </div>
+                            <p class="mt-2 text-xs font-bold text-gray-500">施術前</p>
+                        </div>
+                        <svg class="w-10 h-10 text-brand-red animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                        <div class="text-center">
+                            <div class="w-32 h-32 bg-blue-50 rounded-full flex flex-wrap p-3 overflow-hidden border-2 border-blue-100">
+                                <div class="w-4 h-4 bg-yellow-300 rounded-full m-2"></div>
+                                <div class="w-4 h-4 bg-yellow-300 rounded-full m-2"></div>
+                            </div>
+                            <p class="mt-2 text-xs font-bold text-blue-500">施術後</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded-lg text-sm italic">
+                        ※イメージ：脂肪細胞の減少イメージ
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span class="inline-block px-4 py-1 bg-brand-red text-white text-sm font-bold rounded-full mb-4">TECHNOLOGY</span>
+                    <h3 class="text-3xl font-bold text-brand-red mb-6 leading-tight">細胞レベルでのケアで<br>リバウンドしづらい</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        さらに一度治療したところは<span class="text-brand-red font-bold underline decoration-brand-gold decoration-4 underline-offset-4">細胞の数が減っている</span>ため、リバウンドしづらいんです！
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        自己流のダイエットとは一線を画す、医療アプローチならではの確かな理論に基づいています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-32 cta-bg text-white">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-12 drop-shadow-lg">興味を持ったそこのあなた！</h2>
+            
+            <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-10 md:p-16 shadow-2xl">
+                <p class="text-2xl md:text-3xl mb-12 leading-relaxed">
+                    今なら<span class="bg-brand-red text-white text-5xl font-bold px-6 py-1 rounded-lg shadow-lg mx-2 inline-block">?</span>円で体験できるので、<br class="hidden md:block">
+                    気になる方はこちらから
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-8">
+                    <a href="#" class="cta-button bg-brand-red text-white text-2xl font-bold py-6 px-14 rounded-full flex items-center justify-center shadow-xl">
+                        今すぐ予約 <span class="ml-3 text-3xl">›</span>
+                    </a>
+                    <a href="#" class="cta-button bg-white text-gray-900 text-2xl font-bold py-6 px-14 rounded-full flex items-center justify-center shadow-xl">
+                        詳細を見る <span class="ml-3 text-3xl">›</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-50 pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-16">
+                <h3 class="text-3xl md:text-4xl font-serif font-bold mb-12 text-gray-800">喜びでいっぱいの接客プロフェッショナルへ</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-lg transform rotate-3">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full">
+                    </div>
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-lg transform -rotate-2">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full">
+                    </div>
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-lg transform rotate-6">
+                        <img src="https://images.unsplash.com/photo-1519085185758-2ad97904668e?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full">
+                    </div>
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-lg transform -rotate-6">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full">
+                    </div>
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-lg transform rotate-2">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full">
+                    </div>
+                    <div class="w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden shadow-lg transform -rotate-3">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=300" class="object-cover w-full h-full">
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 py-12 flex flex-col md:flex-row items-start justify-between gap-10">
+                <div class="flex flex-col items-start">
+                    <img src="https://via.placeholder.com/180x60?text=Surulim" alt="Surulim Logo" class="h-10 mb-6">
+                    <div class="text-gray-600 space-y-2 text-left">
+                        <p class="font-bold">Surulim メディカルビューティクリニック</p>
+                        <p>〒000-0000 〇〇県〇〇市〇〇町0-0-0 〇〇ビル 4F</p>
+                        <p>TEL: 0120-000-000 (受付時間 10:00-20:00)</p>
+                        <p>Web: www.surulim.co.jp</p>
+                    </div>
+                </div>
+                <div class="max-w-md text-[11px] text-gray-400 leading-relaxed text-left">
+                    <p class="mb-2">【注記】</p>
+                    <p>※本施術は自由診療となります。10年間無事故、症例実績15万人、治験検証データは開発元および提携クリニックの合算によるものです。韓国での開発技術を基に日本国内の法規に則り提供されています。効果には個人差があり、副作用のリスクを理解した上で受診してください。</p>
+                </div>
+            </div>
+            
+            <div class="pb-10 text-center text-xs text-gray-400">
+                &copy; 2024 Surulim. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
